@@ -12,6 +12,10 @@ Sistema para gestão de conhecimento
 git clone https://github.com/ronaldobergara/Sistema_GC.git Sistema_GC
 cd Sistema_GC
 python -m venv .Sistema_GC
-source .Sistema_GC/bin/activate.bat
+cd .Sistema_GC/Scripts/
+activate
+echo @python %VIRTUAL_ENV%\..\manage.py %* > manage.bat
+cd..
+cd..
 pip install -r requirements.txt
 ```
